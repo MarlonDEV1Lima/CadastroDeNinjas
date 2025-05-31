@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class CadastroDeNinjasApplication {
 
-	@RequestMapping("/")
-	String home(){
-
-	return "Olá Mundo!";
-	}
+//	@RequestMapping("/")
+//	String home(){
+//
+//	return "Olá Mundo!";
+//	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(
