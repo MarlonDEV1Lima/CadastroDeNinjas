@@ -2,10 +2,17 @@ package com.mrln.CadastroDeNinjas;
 
 import com.mrln.CadastroDeNinjas.Missoes.MissoesModel;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 //Entidade de Ninja para o banco de dados
 @Entity
 @Table(name ="tb_cadastro")
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class NinjaModel {
 
 @Id
@@ -22,36 +29,4 @@ private int idade;
 private MissoesModel missoes;
 
 
-    public NinjaModel() {
-    }
-
-    public NinjaModel(int idade, String email, String nome) {
-        this.idade = idade;
-        Email = email;
-        this.nome = nome;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getEmail() {
-        return Email;
-    }
-
-    public void setEmail(String email) {
-        Email = email;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
 }
