@@ -1,4 +1,4 @@
-package com.mrln.CadastroDeNinjas;
+package com.mrln.CadastroDeNinjas.Ninjas;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
